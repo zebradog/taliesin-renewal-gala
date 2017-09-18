@@ -1,0 +1,226 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Taliesin Theme
+ URL : http://wufoo.com
+
+ Last Updated : April 1, 2011
+
+- - - - - - - - - - - - - - - - - - - - -
+
+INSTRUCTIONS
+1. Copy / Paste all or portions of these
+CSS rules into "custom.css".
+
+2. Experiment and play.
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - Default - - - */
+
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,600,700";
+
+
+/* Logo */
+#logo a {background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://wufoo.com/images/themes/logos/shark.png", sizingMethod="crop");
+}
+
+/* Backgrounds */
+html{background-image:none;background-color:#FFFFFF}
+#logo{background-image:none;background-color:#669900}
+#container{background:#FFFFFF}
+.wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
+.wufoo .focused{background:#FFF7C0}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+#container{border:0 solid #cccccc}
+.wufoo .info{border-bottom:1px dotted #CCCCCC}
+.wufoo .instruct{border:1px solid #e6e6e6}
+
+/* Typography */
+
+body, input, select, textarea {
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.wufoo .info h2{font-size:160%;font-family:"Josefin Sans", Helvetica, sans-serif;color:#000000}
+.wufoo .info div{font-size:95%;font-family:"Josefin Sans", Helvetica, sans-serif;color:#444444}
+.wufoo .section h3{font-size:110%;font-family:"Josefin Sans", Helvetica, sans-serif;background:#FFFFFF;color:#000000}
+.wufoo .section div{font-size:85%;font-family:"Josefin Sans", Helvetica, sans-serif;color:#444444}
+.wufoo label.desc, .wufoo legend.desc{font-size:95%;font-family:"Josefin Sans", Helvetica, sans-serif;color:#444444}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family:"Josefin Sans", Helvetica, sans-serif;color:#444444}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;font-family:"Josefin Sans", Helvetica, sans-serif;color:#333333}
+.wufoo label.choice{color:#444444}
+.wufoo .instruct{font-size:80%;font-family:inherit;color:#444444
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  height: 2.75em;
+  line-height: 2.75em;
+  min-width: 9.25em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+  input[type="submit"].icon,
+  input[type="reset"].icon,
+  input[type="button"].icon,
+  button.icon,
+  .button.icon {
+    padding-left: 1.35em;
+  }
+
+    input[type="submit"].icon:before,
+    input[type="reset"].icon:before,
+    input[type="button"].icon:before,
+    button.icon:before,
+    .button.icon:before {
+      margin-right: 0.5em;
+    }
+
+  input[type="submit"].fit,
+  input[type="reset"].fit,
+  input[type="button"].fit,
+  button.fit,
+  .button.fit {
+    display: block;
+    margin: 0 0 1em 0;
+    width: 100%;
+  }
+
+  input[type="submit"].small,
+  input[type="reset"].small,
+  input[type="button"].small,
+  button.small,
+  .button.small {
+    font-size: 0.8em;
+  }
+
+  input[type="submit"].big,
+  input[type="reset"].big,
+  input[type="button"].big,
+  button.big,
+  .button.big {
+    font-size: 1.35em;
+  }
+
+  input[type="submit"].disabled, input[type="submit"]:disabled,
+  input[type="reset"].disabled,
+  input[type="reset"]:disabled,
+  input[type="button"].disabled,
+  input[type="button"]:disabled,
+  button.disabled,
+  button:disabled,
+  .button.disabled,
+  .button:disabled {
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    opacity: 0.25;
+  }
+
+  @media screen and (max-width: 736px) {
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+      min-width: 0;
+    }
+
+  }
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  color: #ffffff !important;
+}
+
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  button:active,
+  .button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  input[type="submit"].icon:before,
+  input[type="reset"].icon:before,
+  input[type="button"].icon:before,
+  button.icon:before,
+  .button.icon:before {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  input[type="submit"].special,
+  input[type="reset"].special,
+  input[type="button"].special,
+  button.special,
+  .button.special {
+    background-color: #8cc9f0;
+    color: #ffffff !important;
+    box-shadow: none;
+  }
+
+    input[type="submit"].special:hover,
+    input[type="reset"].special:hover,
+    input[type="button"].special:hover,
+    button.special:hover,
+    .button.special:hover {
+      background-color: #9acff2;
+    }
+
+    input[type="submit"].special:active,
+    input[type="reset"].special:active,
+    input[type="button"].special:active,
+    button.special:active,
+    .button.special:active {
+      background-color: #7ec3ee;
+    }
+
+    input[type="submit"].special.icon:before,
+    input[type="reset"].special.icon:before,
+    input[type="button"].special.icon:before,
+    button.special.icon:before,
+    .button.special.icon:before {
+      color: #ffffff !important;
+    }
