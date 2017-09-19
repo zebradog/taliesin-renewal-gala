@@ -242,10 +242,6 @@ label {
 input,
 select,text,
 textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
 	border-radius: 8px;
 	border: solid 1px;
 	color: inherit;
