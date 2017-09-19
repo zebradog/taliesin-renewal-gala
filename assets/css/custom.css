@@ -162,9 +162,9 @@ input[type="reset"],
 input[type="button"],
 button,
 .button {
-  background-color: transparent;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-  color: #ffffff !important;
+	background-color: #ef2e24;
+	box-shadow: inset 0 0 0 1px #dddddd;
+	color: #FFFFFF !important;
 }
 
   input[type="submit"]:hover,
@@ -172,7 +172,7 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(170, 31, 35, 0.85);
   }
 
   input[type="submit"]:active,
@@ -206,7 +206,7 @@ button,
     input[type="button"].special:hover,
     button.special:hover,
     .button.special:hover {
-      background-color: #9acff2;
+      background-color: rgba(170, 31, 35, 0.85);
     }
 
     input[type="submit"].special:active,
@@ -224,3 +224,108 @@ button,
     .button.special.icon:before {
       color: #ffffff !important;
     }
+
+
+/* form */
+
+form {
+	margin: 0 0 2em 0;
+}
+
+label {
+	display: block;
+	font-size: 0.9em;
+	font-weight: 400;
+	margin: 0 0 1em 0;
+}
+
+input,
+select,text,
+textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	border-radius: 8px;
+	border: solid 1px;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 1em;
+	text-decoration: none;
+	width: 100%;
+	box-shadow: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+	box-shadow: none;
+}
+
+.select-wrapper {
+text-decoration: none;
+display: block;
+position: relative;
+}
+
+.select-wrapper:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+.select-wrapper:before {
+	content: '\f078';
+	display: block;
+	height: 2.75em;
+	line-height: 2.75em;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 2.75em;
+}
+
+.select-wrapper select::-ms-expand {
+	display: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+height: 2.75em;
+}
+
+textarea {
+padding: 0.75em 1em;
+}
+
+form li.complex div span.full input, form li.complex div span.full select, form li.complex div span.left input, form li.complex div span.right input, form li.complex div span.left select, form li.complex div span.right select {width:90%!important}
+
+label {
+color: #ffffff;
+}
+
+input,
+select,
+textarea {
+background: rgba(255, 255, 255, 0.075);
+border-color: #dddddd;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border-color: #8cc9f0;
+	box-shadow: 0 0 0 1px #8cc9f0;
+}
+
+.select-wrapper:before {
+color: rgba(255, 255, 255, 0.35);
+}
