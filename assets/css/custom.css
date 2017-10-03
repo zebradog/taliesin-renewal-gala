@@ -22,10 +22,10 @@ CSS rules into "custom.css".
 
 
 /* Logo */
-#logo a {background-image:url('https://code.zebradog.com/taliesin-renewal-gala/assets/css/images/tpi-logo.png'); min-height:0; height:40px}
+#logo a {background-image:url('https://code.zebradog.com/taliesin-renewal-gala/assets/css/images/header.png'); min-height:0; height:40px}
 * html #logo a {/* IE6 png Support */
 	background-image: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://code.zebradog.com/taliesin-renewal-gala/assets/css/images/tpi-logo.png", sizingMethod="crop");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://code.zebradog.com/taliesin-renewal-gala/assets/css/images/header.png", sizingMethod="crop");
 }
 
 /* Backgrounds */
