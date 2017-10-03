@@ -22,15 +22,15 @@ CSS rules into "custom.css".
 
 
 /* Logo */
-#logo a {background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px}
+#logo a {background-image:url('https://code.zebradog.com/taliesin-renewal-gala/assets/css/images/tpi-logo.png'); min-height:0; height:40px}
 * html #logo a {/* IE6 png Support */
 	background-image: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://wufoo.com/images/themes/logos/shark.png", sizingMethod="crop");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://code.zebradog.com/taliesin-renewal-gala/assets/css/images/tpi-logo.png", sizingMethod="crop");
 }
 
 /* Backgrounds */
 html{background-image:none;background-color:#FFFFFF}
-#logo{background-image:none;background-color:#669900}
+#logo{background-image:none;background-color:#ef2e24}
 #container{background:#FFFFFF}
 .wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
 .wufoo .focused{background:#FFF7C0}
